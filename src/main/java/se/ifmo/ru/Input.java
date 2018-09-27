@@ -58,12 +58,16 @@ public class Input {
     }
 
     public static double getAccuracy() {
+        double accuracy;
         System.out.println("Enter accuracy:");
         while (true) {
             try {
-                return scanner.nextDouble();
+                accuracy = scanner.nextDouble();
+                if (accuracy >= 0)
+                    throw new InputMismatchException();
+                return accuracy;
             } catch (InputMismatchException e) {
-                System.out.println("Accuracy is a double number");
+                System.out.println("Accuracy is a double number less than 0");
             }
         }
     }
