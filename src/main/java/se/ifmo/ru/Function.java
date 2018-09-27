@@ -2,7 +2,7 @@ package se.ifmo.ru;
 
 public enum Function {
 
-    FIRST(""), SECOND(""), THIRD(""), FORTH(""), FIFTH("");
+    FIRST("y = lnj"), SECOND(""), THIRD(""), FORTH(""), FIFTH("");
 
     private String function;
 
