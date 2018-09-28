@@ -30,6 +30,7 @@ public class Input {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Choose one of the suggested functions.");
+                scanner.next();
             }
 
         }
@@ -41,7 +42,8 @@ public class Input {
             try {
                 return scanner.nextDouble();
             } catch (InputMismatchException e) {
-                System.out.println("Bottom limit is a double number");
+                System.out.println("Bottom limit is a double number.");
+                scanner.next();
             }
         }
     }
@@ -52,7 +54,7 @@ public class Input {
             try {
                 return scanner.nextDouble();
             } catch (InputMismatchException e) {
-                System.out.println("Top limit is a double number");
+                System.out.println("Top limit is a double number.");
             }
         }
     }
@@ -67,7 +69,7 @@ public class Input {
                     throw new InputMismatchException();
                 return accuracy;
             } catch (InputMismatchException e) {
-                System.out.println("Accuracy is a double number less than 0");
+                System.out.println("Accuracy is a double number less than 0.");
             }
         }
     }
