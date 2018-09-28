@@ -55,6 +55,7 @@ public class Input {
                 return scanner.nextDouble();
             } catch (InputMismatchException e) {
                 System.out.println("Top limit is a double number.");
+                scanner.next();
             }
         }
     }
@@ -70,6 +71,7 @@ public class Input {
                 return accuracy;
             } catch (InputMismatchException e) {
                 System.out.println("Accuracy is a double number less than 0.");
+                scanner.next();
             }
         }
     }
