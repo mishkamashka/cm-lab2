@@ -9,8 +9,10 @@ public class Main {
                 System.out.println("Accuracy cannot be reached. No solution.");
                 break;
             case 0:
-                System.out.println("Result: " + calculator.getResult());
-                System.out.println("Error: " + calculator.getUac());
+                System.out.print("Result: ");
+                System.out.printf("%.3f\n", calculator.getResult());
+                System.out.print("Error: ");
+                System.out.printf("%.10f\n", calculator.getUac());
                 System.out.println("Steps amount: " + calculator.getP());
                 break;
             case 1:
