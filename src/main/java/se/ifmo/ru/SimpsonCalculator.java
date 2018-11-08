@@ -60,7 +60,7 @@ public class SimpsonCalculator {
                     i++;
                     sum1 += 2 * function.calculateFunction(bottomLimit + i * h);
                 }
-                i1 = (sum1 + function.calculateFunction(bottomLimit) - function.calculateFunction(topLimit) * h / 3);
+                i1 = (sum1 + function.calculateFunction(bottomLimit) - function.calculateFunction(topLimit)) * h / 3;
 
                 h = (topLimit - bottomLimit) / (2 * n);
                 for (int i = 1; i < 2 * n; i++) {
@@ -68,7 +68,7 @@ public class SimpsonCalculator {
                     i++;
                     sum2 += 2 * function.calculateFunction(bottomLimit + i * h);
                 }
-                i2 = (sum1 + function.calculateFunction(bottomLimit) - function.calculateFunction(topLimit) * h / 3);
+                i2 = (sum2 + function.calculateFunction(bottomLimit) - function.calculateFunction(topLimit)) * h / 3;
 
                 if (Math.abs(i2 - i1) / 15 < accuracy) {
                     result = i2;
@@ -87,5 +87,6 @@ public class SimpsonCalculator {
             p = 0;
             return 1;
         }
+        return -1;
     }
 }

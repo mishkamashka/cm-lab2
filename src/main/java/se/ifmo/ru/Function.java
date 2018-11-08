@@ -2,7 +2,7 @@ package se.ifmo.ru;
 
 public enum Function {
 
-    FIRST("y = sin(x*3/2) + 1/2"), SECOND("y = log(x/5 + cos(2*x))"), THIRD("y = sqrt(cos(x^2))"), FORTH("5*(x^5) + 3*x^0.5)"), FIFTH("x^(x^2)");
+    FIRST("y = x*x"), SECOND("y = log(x/5 + cos(2*x))"), THIRD("y = sqrt(cos(x^2))"), FORTH("y = 5*(x^5) + 3*(x^0.5)"), FIFTH("y = x^(x^2)");
 
     private String function;
 
@@ -13,7 +13,7 @@ public enum Function {
     public double calculateFunction(double x) {
         switch (this) {
             case FIRST:
-                return (Math.sin(x * 3 / 2) + 0.5);
+                return (x*x);
             case SECOND:
                 return Math.log(x / 5 + Math.cos(2 * x));
             case THIRD:

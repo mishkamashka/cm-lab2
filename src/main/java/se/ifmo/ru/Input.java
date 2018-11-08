@@ -66,7 +66,7 @@ public class Input {
         while (true) {
             try {
                 accuracy = scanner.nextDouble();
-                if (accuracy >= 0)
+                if (accuracy <= 0)
                     throw new InputMismatchException();
                 return accuracy;
             } catch (InputMismatchException e) {
