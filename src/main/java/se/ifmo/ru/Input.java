@@ -10,9 +10,7 @@ public class Input {
     public static Function getFunction() {
         System.out.println("1 - " + Function.FIRST.toString() +
                 "\n2 - " + Function.SECOND.toString() +
-                "\n3 - " + Function.THIRD.toString() +
-                "\n4 - " + Function.FORTH.toString() +
-                "\n5 - " + Function.FIFTH.toString());
+                "\n3 - " + Function.THIRD.toString());
         System.out.println("Choose a function you want to integrate:");
         while (true) {
             try {
@@ -22,11 +20,7 @@ public class Input {
                     case 2:
                         return Function.SECOND;
                     case 3:
-                        return Function.THIRD;
-                    case 4:
-                        return Function.FORTH;
-                    case 5:
-                        return Function.FIFTH;
+                        return Function.THIRD; //TODO: 1/x, косинус, линейная,
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Choose one of the suggested functions.");
