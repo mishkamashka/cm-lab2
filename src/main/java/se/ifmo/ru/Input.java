@@ -20,7 +20,7 @@ public class Input {
                     case 2:
                         return Function.SECOND;
                     case 3:
-                        return Function.THIRD; //TODO: 1/x, косинус, линейная,
+                        return Function.THIRD;
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Choose one of the suggested functions.");
